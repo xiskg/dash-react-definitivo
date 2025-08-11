@@ -1,0 +1,216 @@
+.produtos {
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 0.375rem;
+    background-color: white;
+    display: flex;
+    gap: 20px;
+}
+
+div.imagem {
+    min-height: 100px;
+    min-width: 100px;
+    display: flex;
+    align-items: center;
+}
+
+div.imagem > img {
+    max-height: 100px;
+    max-width: 100px;
+    object-fit: scale-down;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.descricao {
+    width: 100%;
+    margin-top: 10px;
+    display: inline-block;
+    flex-direction: column;
+}
+
+.descricao > .titulo {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+.descricao > .pilulas {
+    display: block;
+    margin-left: -10px;
+    margin-top: 5px;
+}
+.pill {
+    background-color: #eee;
+    border: none;
+    color: black;
+    padding: 5px 15px;
+    text-align: center;
+    white-space: nowrap;
+    display: inline-block;
+    margin: 5px 5px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-size: 0.55rem;
+}
+.pill:hover {
+    background-color: #f2f2f2;
+}
+
+.descricao .numero_pedido {
+    text-transform: uppercase;
+    font-size: .4rem;
+}
+
+.pedidos .titulo {
+    text-align: center;
+    font-size: .9rem;
+}
+
+.valores{
+    display: flex;
+    flex-direction: column;
+}
+.valores strong {
+    text-transform: uppercase;
+    font-size: 0.65rem;
+}
+.valores > div{
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    padding-bottom: 8px;
+}
+.valores > div > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.valores > div > div > span{
+    font-size: .65rem;
+    text-transform: uppercase;
+}
+.red.pill {
+    background-color: #F07171 !important;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 5px 15px;
+    font-size: 0.7rem;
+}
+.green.pill{
+    background-color: #71F085 !important;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 5px 15px;
+    font-size: 0.7rem;
+}
+.yellow.pill{
+    background-color: #e6f071 !important;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 5px 15px;
+    font-size: 0.7rem;
+}
+.atributos{
+    display: flex;
+}
+.full {
+    display: inline-flex;
+    margin-bottom: 5px;
+}
+.full > span {
+    background-color: #68FA7F!important;
+    font-weight: bold;
+    display: flex;
+    text-align: center;
+    gap: 3px;
+    color: black;
+    padding: 5px 15px;
+    white-space: nowrap;
+    margin: 5px 5px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-size: 0.55rem;
+}
+.catalogo{
+    display: inline-flex;
+    margin-bottom: 5px;
+}
+.catalogo > span{
+    background-color: #71E1F0 !important;
+    font-weight: bold;
+    display: flex;
+    text-align: center;
+    gap: 3px;
+    color: black;
+    padding: 5px 15px;
+    white-space: nowrap;
+    margin: 5px 5px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-size: 0.55rem;
+}
+.null {
+    display: none !important;
+}
+.null > span {
+    display: none !important;
+}
+
+.pill.SHOPEE{
+    background-color: #FFCC99!important;
+}
+.pill.MERCADOLIVRE{
+    background-color: #FFF5A3!important;
+}
+.pill.OLIST{
+    background-color: #A3CFFF!important;
+}
+.pill.AMAZON{
+    background-color: #FFD1A3!important;
+}
+.pill.MAGAZINELUIZA{
+    background-color: #A3BFFF!important;
+}
+.pill.SHEIN{
+    background-color: #FFB3D1!important;
+}
+.pill.LOJAINTEGRADA{
+    background-color: #A3FFEB!important;
+}
+.total{
+    display: flex;
+}
+.totalnumero{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+@media (max-width: 780px) {
+    .produtos{
+        flex-direction: column;
+    }
+    .valores > div{
+        flex-direction: column;
+        gap: 5px;
+
+    }
+    .valores > div > div {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .total{
+        width: 100%;
+    }
+    .totalnumero{
+        flex-direction: row;
+        justify-content: end;
+    }
+    .totalnumero > .pill{
+        margin-left: 0 !important;
+    }
+}

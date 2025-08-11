@@ -1,0 +1,41 @@
+.cardMarketplace{
+    border: 1px solid #ccc !important;
+    border-radius: 0.375rem !important;
+    background-color: white !important;
+    padding: 1rem !important;
+}
+h3 {
+    text-align: center !important;
+    font-size: .8rem !important;
+}
+h3 > img{
+    max-width: 20%;
+}
+.cardMarketplace > div {
+    border: 1px solid #ccc !important;
+    border-radius: 0.375rem !important;
+    padding: 10px !important;
+    margin: 10px !important;
+    display: flex !important;
+    flex-direction: column-reverse !important;
+    align-items: center !important;
+}
+
+.real {
+    opacity: 1 !important;
+    font-weight: bold !important;
+    padding: 0 5px !important;
+    font-size: 1.5rem !important;
+}
+.real > strong {
+    font-size: 1rem !important;
+    font-weight: bold !important;
+    opacity: 50% !important;
+    padding: 0 5px !important;
+    font-family: Ubuntu Mono, sans-serif !important;
+}
+.cardMarketplace > div > .quant {
+    opacity: 50% !important;
+    padding: 0 5px !important;
+    font-family: Ubuntu Mono, sans-serif !important;
+}
